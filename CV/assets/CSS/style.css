@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+    --header-bg: #f4f4f4;
+}
+
+html {
+    font-family: Lato, monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-content: center;
+}
+
+body {
+    width: 70dvw;
+    height: 100dvh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    background-color: var(--header-bg);
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+
+    > div.titles {
+        flex: 0.7;
+    }
+
+    > div.photo {
+        flex: 0.3;
+        text-align: center;
+
+        > img {
+            height: 90%;
+            border-radius: 50%;
+            position: relative;
+            top: 30%;
+            left: 15%;
+        }
+    }
+}
+
+main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 2fr;
+}
+
+.contact {
+    grid-row: 1;
+    grid-column: 1;
+
+    > div.contact-infos {
+        margin-bottom: 0.5rem;
+
+        > img {
+            height: 1rem;
+            aspect-ratio: 1/1;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.profile {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.education {
+    grid-row: 2 / span 3;
+    grid-column: 1;
+}
+
+.skills {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.experience {
+    grid-row: 3 / span 2;
+    grid-column: 2;
+}
