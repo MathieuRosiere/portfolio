@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/CSS/style.css" />
+        <link rel="stylesheet" href="./assets/CSS/style.css" />
         <title>CV</title>
     </head>
     <body>
@@ -13,26 +13,26 @@
                 <h2>Développeur Front-end</h2>
             </div>
             <div class="photo">
-                <img src="/assets/img/photo.png" alt="Photo" />
+                <img src="./assets/img/photo.png" alt="Photo" />
             </div>
         </header>
         <main>
-            <section class="contact">
+            <section id="contact" class="border-bot border-right">
                 <h3>CONTACT</h3>
                 <div class="contact-infos">
-                    <img src="/assets/icons/phone.png" alt="phone-icon" />
+                    <img src="./assets/icons/phone.png" alt="phone-icon" />
                     <span>06 09 20 10 69</span>
                 </div>
                 <div class="contact-infos">
-                    <img src="/assets/icons/email.png" alt="phone-icon" />
+                    <img src="./assets/icons/email.png" alt="phone-icon" />
                     <span>rosiere.mathieu@gmail.com</span>
                 </div>
                 <div class="contact-infos">
-                    <img src="/assets/icons/address.png" alt="phone-icon" />
+                    <img src="./assets/icons/address.png" alt="phone-icon" />
                     <span>59000 Lille</span>
                 </div>
             </section>
-            <section class="profile">
+            <section id="profile" class="border-bot padding-left">
                 <h3>PROFIL</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia ex nostrum fuga qui
@@ -41,7 +41,7 @@
                     quaerat autem omnis laboriosam ducimus ea eveniet eaque.
                 </p>
             </section>
-            <section class="education">
+            <section id="education" class="border-right">
                 <h3>FORMATIONS</h3>
                 <div class="educ-details">
                     <h4>DÉVELOPPEUR WEB/WEB MOBILE</h4>
@@ -79,10 +79,10 @@
                     <p>2013 - 2016</p>
                 </div>
             </section>
-            <section class="skills">
+            <section id="skills" class="border-bot padding-left">
                 <h3>COMPÉTENCES</h3>
-                <div class="skills-list">
-                    <ul>
+                <div class="list-wrapper">
+                    <ul class="skills-list">
                         <li>Sens de l'organisation.</li>
                         <li>Respect des échéances.</li>
                         <li>Résolution de problèmes.</li>
@@ -90,9 +90,8 @@
                         <li>Anglais Niveau B2.</li>
                         <li>Adaptabilité.</li>
                     </ul>
-                </div>
-                <div class="techno-list">
-                    <ul>
+                    <div class="separator"></div>
+                    <ul class="techno-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
@@ -100,7 +99,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="experience">
+            <section id="experience" class="padding-left">
                 <h3>EXPÉRIENCES</h3>
                 <div class="exp-details">
                     <h4>APPRENTI ÉLECTRICIEN</h4>
@@ -111,7 +110,10 @@
                     <ul>
                         <li>Travaux de rénovations de logements.</li>
                         <li>Mises aux normes des installations.</li>
-                        <li>Gestion de chantier (planning, approvisionnement, relations avec les clients et les autres entreprises intervenantes).</li>
+                        <li>
+                            Gestion de chantier (planning, approvisionnement, relations avec les clients et les autres
+                            entreprises intervenantes).
+                        </li>
                         <li>Dépannages (particuliers, professionnels, industrie,...)</li>
                     </ul>
                 </div>
