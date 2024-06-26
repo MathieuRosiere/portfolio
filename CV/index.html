@@ -4,85 +4,86 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/CSS/style.css" />
+        <script src="https://kit.fontawesome.com/73054f2945.js" crossorigin="anonymous"></script>
         <title>CV</title>
     </head>
     <body>
         <header>
             <div class="titles">
                 <h1>MATHIEU ROSIERE</h1>
-                <h2>Développeur Front-end</h2>
+                <h2>DÉVELOPPEUR FRONT-END</h2>
             </div>
             <div class="photo">
                 <img src="./assets/img/photo.png" alt="Photo" />
             </div>
         </header>
         <main>
-            <section id="contact" class="border-bot border-right">
+            <section id="contact" >
                 <h3>CONTACT</h3>
                 <div class="contact-infos">
-                    <img src="./assets/icons/phone.png" alt="phone-icon" />
+                    <i class="fa-solid fa-phone"></i>
                     <span>06 09 20 10 69</span>
                 </div>
                 <div class="contact-infos">
-                    <img src="./assets/icons/email.png" alt="phone-icon" />
+                    <i class="fa-solid fa-envelope"></i>
                     <span>rosiere.mathieu@gmail.com</span>
                 </div>
                 <div class="contact-infos">
-                    <img src="./assets/icons/address.png" alt="phone-icon" />
+                    <i class="fa-solid fa-location-dot"></i>
                     <span>59000 Lille</span>
                 </div>
+                <div class="contact-infos">
+                    <i class="fa-brands fa-github"></i>
+                    <span><a href="https://github.com/MathieuRosiere" target="_blank">Mes repos</a></span>
+                </div>
             </section>
-            <section id="profile" class="border-bot padding-left">
+            <section id="profile" >
                 <h3>PROFIL</h3>
-                <p>
+                <p class="font-color-sec">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia ex nostrum fuga qui
                     officia consectetur alias velit distinctio adipisci modi illo doloribus atque nemo voluptas, veniam,
                     eos nam. Nam sint commodi nesciunt similique quidem, architecto ab. Libero incidunt eum voluptates
                     quaerat autem omnis laboriosam ducimus ea eveniet eaque.
                 </p>
             </section>
-            <section id="education" class="border-right">
+            <section id="education" >
                 <h3>FORMATIONS</h3>
                 <div class="educ-details">
                     <h4>DÉVELOPPEUR WEB/WEB MOBILE</h4>
-                    <p>M2i Formation, Villeneuve d'Ascq</p>
+                    <p class="font-color-sec">M2i Formation, Villeneuve d'Ascq</p>
                     <p>Novembre 2023 - Juillet 2024</p>
                     <ul>
-                        <li>
-                            <p><span>Front :</span>HTML, CSS, Javascript, VueJS.</p>
-                        </li>
-                        <li>
-                            <p><span>Back :</span>NodeJS.</p>
-                        </li>
-                        <li><p>Développement d'une application en groupe.</p></li>
+                        <li><p><span class="font-weight-bold">Front :</span><span class="font-color-sec">HTML, CSS, Javascript, VueJS. </span></p></li>
+                        <li><p><span class="font-weight-bold">Back :</span><span class="font-color-sec">NodeJS.</span></p></li>
+                        <li><p class="font-color-sec">Développement d'une application en groupe.</p></li>
                     </ul>
                 </div>
                 <div class="educ-details">
                     <h4>NURSERIE NUMÉRIQUE</h4>
-                    <p>Euratechnologies, Lille</p>
+                    <p class="font-color-sec">Euratechnologies, Lille</p>
                     <p>Septembre 2023 (5 semaines)</p>
                     <p>Initiation aux métiers du numérique.</p>
                 </div>
                 <div class="educ-details">
                     <h4>BTS MAINTENANCE INDUSTRIELLE</h4>
-                    <p>AFPI Saint Martin Boulogne</p>
+                    <p class="font-color-sec">AFPI Saint Martin Boulogne</p>
                     <p>2018 - 2020</p>
                 </div>
                 <div class="educ-details">
                     <h4>CAP ÉLECTRICIEN</h4>
-                    <p>AFPI Saint Martin Boulogne</p>
+                    <p class="font-color-sec">AFPI Saint Martin Boulogne</p>
                     <p>2016 - 2018</p>
                 </div>
                 <div class="educ-details">
                     <h4>BAC PRO TECHNICIEN CONSTRUCTEUR OSSATURE BOIS</h4>
-                    <p>CFA Hesdigneul</p>
+                    <p class="font-color-sec">CFA Hesdigneul</p>
                     <p>2013 - 2016</p>
                 </div>
             </section>
-            <section id="skills" class="border-bot padding-left">
+            <section id="skills" >
                 <h3>COMPÉTENCES</h3>
                 <div class="list-wrapper">
-                    <ul class="skills-list">
+                    <ul class="skills-list border-right">
                         <li>Sens de l'organisation.</li>
                         <li>Respect des échéances.</li>
                         <li>Résolution de problèmes.</li>
@@ -90,7 +91,7 @@
                         <li>Anglais Niveau B2.</li>
                         <li>Adaptabilité.</li>
                     </ul>
-                    <div class="separator"></div>
+                    
                     <ul class="techno-list">
                         <li>HTML</li>
                         <li>CSS</li>
@@ -99,15 +100,15 @@
                     </ul>
                 </div>
             </section>
-            <section id="experience" class="padding-left">
+            <section id="experience" >
                 <h3>EXPÉRIENCES</h3>
                 <div class="exp-details">
                     <h4>APPRENTI ÉLECTRICIEN</h4>
-                    <p>Quenson Électricité</p>
+                    <p class="font-color-sec">Quenson Électricité</p>
                     <p>2016 - 2020</p>
                     <h4>EN CDI</h4>
                     <p>2020 - 2023</p>
-                    <ul>
+                    <ul class="font-color-sec">
                         <li>Travaux de rénovations de logements.</li>
                         <li>Mises aux normes des installations.</li>
                         <li>
@@ -119,9 +120,9 @@
                 </div>
                 <div class="exp-details">
                     <h4>APRRENTI MENUISIER</h4>
-                    <p>SARL Leclercq</p>
+                    <p class="font-color-sec">SARL Leclercq</p>
                     <p>2013 - 2016</p>
-                    <ul>
+                    <ul class="font-color-sec">
                         <li>Fabrication et pose de menuiseries (portes, fenêtres, terrasses, balcons,...)</li>
                         <li>Travaux de charpente et de couverture.</li>
                         <li>Rénovation de bâtiments (isolation, créations d'extensions,...).</li>

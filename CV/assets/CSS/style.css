@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --header-bg: #f4f4f4;
-    --html-bg:rgba(28,39,48,.5);;
+    --html-bg: rgba(28, 39, 48, 0.5);
     --body-bg: #ffffff;
     --font-primary: #464a4e;
     --font-secondary: #706f6f;
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-    width: 70dvw;
+    width: 1200px;
     min-height: 100dvh;
     display: flex;
     flex-flow: column nowrap;
@@ -35,43 +36,62 @@ header {
     margin-top: 1rem;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
 
     > div.titles {
         flex: 0.7;
+        padding-left: 5%;
+        letter-spacing: 4px;
+        font-family: Raleway, monospace;
+
+        > h1 {
+            font-size: 5rem;
+            margin: 0;
+        }
     }
 
     > div.photo {
         flex: 0.3;
+        height: 100%;
         text-align: center;
 
         > img {
-            height: 90%;
+            height: 75%;
             border-radius: 50%;
             position: relative;
-            top: 30%;
-            left: 15%;
+            top: 40%;
         }
     }
 }
 
 main {
     height: auto;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template: repeat(4, 1fr) / 1fr 2fr;
+    margin-top: 2rem;
 }
 
 #contact {
     grid-row: 1;
     grid-column: 1;
+    border-bottom: 2px solid var(--font-secondary);
+    border-right: 2px solid var(--font-secondary);
 
     > div.contact-infos {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
 
-        > img {
-            height: 1rem;
-            aspect-ratio: 1/1;
+        > i {
+            flex: 0.1;
             margin-right: 1rem;
+            text-align: center;
+        }
+
+        > span {
+            flex: 0.9;
         }
     }
 }
@@ -79,31 +99,120 @@ main {
 #profile {
     grid-row: 1;
     grid-column: 2;
+    border-bottom: 2px solid var(--font-secondary);
+    padding-left: 3rem;
 }
 
 #education {
     grid-row: 2 / span 3;
     grid-column: 1;
+    border-right: 2px solid var(--font-secondary);
 }
 
 #skills {
     grid-row: 2;
     grid-column: 2;
+    border-bottom: 2px solid var(--font-secondary);
+    padding-left: 3rem;
+
+    > div.list-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+
+        > ul.skills-list {
+            padding-left: 1rem;
+            flex: 0.5;
+
+            > li {
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        > ul.techno-list {
+            flex: 0.5;
+            > li {
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
 }
 
 #experience {
     grid-row: 3 / span 2;
     grid-column: 2;
+    padding-left: 3rem;
 }
 
-.border-bot {
-    border-bottom: 2px solid #706f6f;
+.font-color-sec {
+    color: var(--font-secondary);
 }
 
-.border-right {
-    border-right: 2px solid #706f6f;
+.font-weight-bold {
+    font-weight: bold;
 }
 
-.padding-left {
-    padding-left: 2rem;
+h3 {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        width: 100dvw;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        > div.titles {
+            text-align: center;
+            padding-left: 0;
+        }
+        > div.photo {
+            > img {
+                position: static;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        > section#contact,
+        section#education {
+            border-right: none;
+        }
+        > section#profile,
+        section#experience,
+        section#skills {
+            padding: 0;
+        }
+    }
+
+    section {
+        border-bottom: 2px solid var(--font-secondary);
+    }
+
+    section#skills {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    div.exp-details {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        > p {
+            margin: 0;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
 }
