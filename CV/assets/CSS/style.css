@@ -68,8 +68,10 @@ main {
     height: auto;
     width: 90%;
     display: grid;
-    grid-template: repeat(4, 1fr) / 1fr 2fr;
+    grid-template: 300px 350px repeat(2, 1fr) / 1fr 2fr;
     margin-top: 2rem;
+    font-size: 1.3rem;
+    
 }
 
 #contact {
@@ -101,6 +103,7 @@ main {
     grid-column: 2;
     border-bottom: 2px solid var(--font-secondary);
     padding-left: 3rem;
+    
 }
 
 #education {
@@ -157,7 +160,7 @@ h3 {
     margin: 0.7rem 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
     body {
         width: 100dvw;
     }
