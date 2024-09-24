@@ -154,6 +154,10 @@ main {
     font-weight: bold;
 }
 
+.pad-bot-20 {
+    padding-bottom: 20px;
+}
+
 h3 {
     font-size: 2.5rem;
     letter-spacing: 8px;
@@ -194,13 +198,14 @@ h3 {
         section#skills {
             padding: 0;
         }
+        
     }
 
     section {
         border-bottom: 2px solid var(--font-secondary);
     }
 
-    section#skills {
+    section#skills, section#contact {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -210,12 +215,21 @@ h3 {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+       border-top: 2px dashed var(--font-secondary);
+       
         > p {
             margin: 0;
         }
     }
 
-    h3 {
+    div.educ-details {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        border-top: 2px dashed var(--font-secondary);
+    }
+
+    h3,h4 {
         text-align: center;
     }
 }
